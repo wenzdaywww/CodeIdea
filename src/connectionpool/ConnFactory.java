@@ -3,7 +3,11 @@ package connectionpool;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+/**
+ * 
+ * @author www
+ *
+ */
 public class ConnFactory {
 	private String url;
 

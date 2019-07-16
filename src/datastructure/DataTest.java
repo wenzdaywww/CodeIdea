@@ -7,13 +7,17 @@ import org.junit.Test;
 import datastructure.intertfaces.MyList;
 import datastructure.lineartable.MyArrayList;
 import datastructure.lineartable.MyLinkedList;
-
+/**
+ * 
+ * @author www
+ *
+ */
 public class DataTest {
 	/**
 	 * 动态数组线性表测试
 	 */
 	@Test
-	public void ArrayListTest() {
+	public void arrayListTest() {
 		MyList<String> myList=new MyArrayList<String>(10);
 		for (int i = 0; i < 20; i++) {
 			myList.add(Integer.toString(i));
@@ -35,7 +39,7 @@ public class DataTest {
 	 * 链表线性表测试
 	 */
 	@Test
-	public void LinkedListTest(){
+	public void linkedListTest(){
 		MyList<String> myList=new MyLinkedList<String>();
 		for (int i = 1; i <= 5; i++) {
 			myList.add(Integer.toString(i));
@@ -52,7 +56,7 @@ public class DataTest {
 		System.out.println(myList.contains("123"));
 	}
 	@Test
-	public void IteratorTest(){
+	public void iteratorTest(){
 		MyList<Integer> linkedList=new MyLinkedList<Integer>();
 		for (int i = 1; i <= 5; i++) {
 			linkedList.add(i);

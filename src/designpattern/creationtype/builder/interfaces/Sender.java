@@ -12,5 +12,5 @@ public interface Sender {
 	/**
 	 * 发送
 	 */
-	public void Send();
+	public void send();
 }

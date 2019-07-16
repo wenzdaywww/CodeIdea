@@ -12,7 +12,7 @@ import designpattern.behaviortype.iterator.interfaces.Iterator;
  */
 public class MyCollection implements Collection {
 
-	   public String string[] = {"A","B","C","D","E"};  
+	   public String []string = {"A","B","C","D","E"};  
 	    @Override  
 	    public Iterator iterator() {  
 	        return new MyIterator(this);  

@@ -7,7 +7,7 @@ package designpattern.structuraltype.adapter.interfaceadapter;
  * @author www
  *
  */
-public class SourceSub1 extends Irapper {
+public class SourceSub1 extends AbstractIrapper {
 	
 	@Override
 	public void method1() {

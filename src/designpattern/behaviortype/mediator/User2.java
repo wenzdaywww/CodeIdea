@@ -10,7 +10,7 @@ import designpattern.behaviortype.mediator.interfaces.Mediator;
  * @author www
  *
  */
-public class User2 extends User {
+public class User2 extends AbstractUser {
 
 	public User2(Mediator mediator) {
 		super(mediator);

@@ -16,15 +16,15 @@ public class CompositeTest {
 	 */
 	public static void main(String[] args) {
 		Tree tree = new Tree("A");  
-		TreeNode nodeB = new TreeNode("B");  
-		TreeNode nodeC = new TreeNode("C");  
-		nodeB.add(nodeC);  
-		tree.root.add(nodeB);  
-		System.out.println("C节点的父节点="+nodeC.getParent().getName());
-		System.out.println("B节点的父节点="+nodeB.getParent().getName());
+		TreeNode nodeb = new TreeNode("B");  
+		TreeNode nodec = new TreeNode("C");  
+		nodeb.add(nodec);  
+		tree.root.add(nodeb);  
+		System.out.println("C节点的父节点="+nodec.getParent().getName());
+		System.out.println("B节点的父节点="+nodeb.getParent().getName());
 		System.out.println("根节点的子节点数"+tree.root.getChildrens().size());
-		System.out.println("B节点的子节点数"+nodeB.getChildrens().size());
-		System.out.println("C节点的子节点数"+nodeC.getChildrens().size());
+		System.out.println("B节点的子节点数"+nodeb.getChildrens().size());
+		System.out.println("C节点的子节点数"+nodec.getChildrens().size());
 	}
 
 }

@@ -8,6 +8,8 @@ package designpattern.behaviortype.state;
  *
  */
 public class Context {
+	private static final String  ONLINE = "online";
+	private static final String  OFFLINE = "offline";
 	private State state;  
 	  
     public Context(State state) {  
@@ -23,9 +25,9 @@ public class Context {
     }  
   
     public void method() {  
-        if (state.getValue().equals("online")) {  
+        if (ONLINE.equals(state.getValue())) {  
             state.online();  
-        } else if (state.getValue().equals("offline")) {  
+        } else if (OFFLINE.equals(state.getValue())) {  
             state.offline();  
         }  
     }  

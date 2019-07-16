@@ -17,7 +17,7 @@ public class MailSender implements Sender{
 	}
 
 	@Override
-	public void Send() {
+	public void send() {
 		System.out.println("邮箱发送。。。。");
 	}
 

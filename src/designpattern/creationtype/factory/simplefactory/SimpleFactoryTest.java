@@ -3,7 +3,11 @@
  * 就是建立一个工厂类，对实现了同一接口的一些类进行实例的创建。
  */
 package designpattern.creationtype.factory.simplefactory;
-
+/**
+ * 
+ * @author www
+ *
+ */
 public class SimpleFactoryTest {
 
 	/**

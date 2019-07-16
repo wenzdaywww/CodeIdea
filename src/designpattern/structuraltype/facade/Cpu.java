@@ -8,7 +8,7 @@ package designpattern.structuraltype.facade;
  * @author www
  *
  */
-public class CPU {
+public class Cpu {
 	/**
 	 * CPU启动
 	 */

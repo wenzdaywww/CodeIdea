@@ -10,7 +10,7 @@ import designpattern.structuraltype.adapter.interfaceadapter.interfaces.Sourceab
  * @author www
  *
  */
-public abstract class Irapper implements Sourceable {
+public abstract class AbstractIrapper implements Sourceable {
 
 	@Override
 	public void method1() {}

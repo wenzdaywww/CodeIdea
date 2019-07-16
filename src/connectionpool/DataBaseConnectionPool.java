@@ -5,10 +5,14 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.LinkedList;
-
-public class DBConnectionPool {
+/**
+ * 
+ * @author www
+ *
+ */
+public class DataBaseConnectionPool {
 	/** 链接池单例*/
-	private static DBConnectionPool instance;
+	private static DataBaseConnectionPool instance;
 	/** 链接工程对象*/
 	private ConnFactory conf;
 	/** 驱动*/
@@ -34,7 +38,7 @@ public class DBConnectionPool {
 	/** 活跃链接*/
 	private LinkedList<Connection> activeConnection = new LinkedList<Connection>();
 
-	private DBConnectionPool(){
+	private DataBaseConnectionPool(){
 		this.loadDriver();
 		this.createPool();
 	}
@@ -42,9 +46,9 @@ public class DBConnectionPool {
 	 * 取得链接池实例
 	 * @return
 	 */
-	public static DBConnectionPool getInstance(){
+	public static DataBaseConnectionPool getInstance(){
 		if(instance == null){
-			instance = new DBConnectionPool();
+			instance = new DataBaseConnectionPool();
 		}
 		return instance;
 	}

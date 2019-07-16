@@ -3,7 +3,11 @@
  * 通过克隆原型，减少对象的创建,该模式的思想就是将一个对象作为原型，对其进行复制、克隆，产生一个和原对象类似的新对象。
  */
 package designpattern.creationtype.prototype;
-
+/**
+ * 
+ * @author www
+ *
+ */
 public class PrototypeTest {
 
 	/**

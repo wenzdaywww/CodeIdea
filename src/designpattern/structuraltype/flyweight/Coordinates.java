@@ -17,19 +17,19 @@ public class Coordinates {
         this.y = y;  
     }  
       
-    public int getX() {  
+    public int getx() {  
         return this.x;  
     }  
       
-    public void setX(int x) {  
+    public void setx(int x) {  
         this.x = x;  
     }  
       
-    public int getY() {  
+    public int gety() {  
         return this.y;  
     }  
       
-    public void setY(int y) {  
+    public void sety(int y) {  
         this.y = y;  
     }  
 }

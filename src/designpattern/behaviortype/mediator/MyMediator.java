@@ -11,14 +11,14 @@ import designpattern.behaviortype.mediator.interfaces.Mediator;
  */
 public class MyMediator implements Mediator {
 
-    private User user1;  
-    private User user2;  
+    private AbstractUser user1;  
+    private AbstractUser user2;  
       
-    public User getUser1() {  
+    public AbstractUser getUser1() {  
         return user1;  
     }  
   
-    public User getUser2() {  
+    public AbstractUser getUser2() {  
         return user2;  
     }  
   

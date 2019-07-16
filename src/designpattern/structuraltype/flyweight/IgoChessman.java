@@ -18,6 +18,6 @@ public abstract class IgoChessman {
 	 * 显示棋子
 	 */
 	public void display(Coordinates coord){  
-        System.out.println("棋子颜色：" + this.getColor() + "，棋子位置：" + coord.getX() + "，" + coord.getY() );    
+        System.out.println("棋子颜色：" + this.getColor() + "，棋子位置：" + coord.getx() + "，" + coord.gety() );    
     }
 }

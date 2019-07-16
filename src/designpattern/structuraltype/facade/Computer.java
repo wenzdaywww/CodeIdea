@@ -9,12 +9,12 @@ package designpattern.structuraltype.facade;
  *
  */
 public class Computer {
-	private CPU cpu;  
+	private Cpu cpu;  
     private Memory memory;  
     private Disk disk;  
       
     public Computer(){  
-        cpu = new CPU();  
+        cpu = new Cpu();  
         memory = new Memory();  
         disk = new Disk();  
     }  

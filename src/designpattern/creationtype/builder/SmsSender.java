@@ -17,7 +17,7 @@ public class SmsSender implements Sender {
 	}
 
 	@Override
-	public void Send() {
+	public void send() {
 		System.out.println("SMS发送。。。。");
 	}
 

@@ -46,7 +46,8 @@ public class MyArrayList<T> implements MyList<T>{
 	public boolean add(int position, T entry) {
 		boolean isSuccess=true;
 		try {
-			if (isFull()) {//数组长度扩展，每次扩展长度=原数组长度+initSize
+			//数组长度扩展，每次扩展长度=原数组长度+initSize
+			if (isFull()) {
 				T[] oldArr=arr;
 				arr=(T[])new Object[initSize+oldArr.length];
 				System.arraycopy(oldArr, 0, arr, 0, length);

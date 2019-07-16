@@ -2,11 +2,15 @@ package connectionpool;
 
 import java.sql.Connection;
 import java.util.ArrayList;
-
+/**
+ * 
+ * @author www
+ *
+ */
 public class TestConnectionPool {
 
 	public static void main(String[] args) {
-		DBConnectionPool pool=DBConnectionPool.getInstance();
+		DataBaseConnectionPool pool=DataBaseConnectionPool.getInstance();
 		pool.setMaxConnNum(15); 
 		ArrayList<Connection> conArr=new ArrayList<Connection>();
 		for (int i = 0; i < 20; i++) {

@@ -10,7 +10,7 @@ import designpattern.structuraltype.bridge.interfaces.Sourceable;
  * @author www
  *
  */
-public abstract class Bridge {
+public abstract class AbstractBridge {
 	private Sourceable source;  
 	/**
 	 * 桥类的方法

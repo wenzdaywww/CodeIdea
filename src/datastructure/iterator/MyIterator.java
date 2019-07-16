@@ -4,7 +4,12 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import datastructure.intertfaces.MyList;
-
+/**
+ * 
+ * @author www
+ *
+ * @param <E>
+ */
 public class MyIterator<E> implements Iterator<E>{
 	/** 集合对象 */
 	private MyList<E> myList;

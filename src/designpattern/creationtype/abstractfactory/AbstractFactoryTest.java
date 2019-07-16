@@ -15,12 +15,12 @@ public class AbstractFactoryTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		FacetoryA facetoryA=new FacetoryA();
-		FacetoryB facetoryB=new FacetoryB();
-		facetoryA.createWasher();
-		facetoryA.createIcebox();
-		facetoryB.createWasher();
-		facetoryB.createIcebox();
+		FacetoryA facetorya=new FacetoryA();
+		FacetoryB facetoryb=new FacetoryB();
+		facetorya.createWasher();
+		facetorya.createIcebox();
+		facetoryb.createWasher();
+		facetoryb.createIcebox();
 	}
 
 }

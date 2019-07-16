@@ -9,5 +9,9 @@ package designpattern.behaviortype.visitor.interfaces;
  *
  */
 public interface Visitor {
+	/**
+	 * visit
+	 * @param sub
+	 */
 	public void visit(Subject sub);
 }
