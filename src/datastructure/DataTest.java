@@ -8,7 +8,8 @@ import datastructure.intertfaces.MyList;
 import datastructure.lineartable.MyArrayList;
 import datastructure.lineartable.MyLinkedList;
 /**
- * 
+ *
+ *
  * @author www
  *
  */
@@ -55,6 +56,7 @@ public class DataTest {
 		System.out.println(myList.removeFisrt());
 		System.out.println(myList.contains("123"));
 	}
+
 	@Test
 	public void iteratorTest(){
 		MyList<Integer> linkedList=new MyLinkedList<Integer>();

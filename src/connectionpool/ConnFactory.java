@@ -15,6 +15,12 @@ public class ConnFactory {
 
 	private String password;
 
+	/**
+	 *
+	 * @param url
+	 * @param user
+	 * @param password
+	 */
 	public ConnFactory(String url, String user, String password) {
 		super();
 		this.url = url;
