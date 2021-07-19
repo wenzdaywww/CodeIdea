@@ -1,4 +1,5 @@
-1、、设计模式的分类
+编程思想：
+1、设计模式的分类
 总体来说设计模式分为三大类：
 (1)、创建型模式(Creation Type)，共五种：
 工厂方法模式(Factory):简单工厂模式(Simple Factory)、工厂方法模式(Factory Method)
