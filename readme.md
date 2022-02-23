@@ -31,4 +31,4 @@
 ## 2、连接池(Connection Pool)
 
 ## 3、数据结构(Data Structure)
-(1)、线性表(Linear Table)
+### 1)、线性表(Linear Table)

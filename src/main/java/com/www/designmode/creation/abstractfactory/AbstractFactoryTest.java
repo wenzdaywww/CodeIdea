@@ -6,7 +6,7 @@ import com.www.designmode.creation.abstractfactory.inf.AbstractFactory;
 import org.junit.Test;
 
 /**
- * <p>@Description 抽象工厂方法测试 </p>
+ * <p>@Description 抽象工厂方法模式测试 </p>
  * <p>@Version 1.0 </p>
  * <p>@Author www </p>
  * <p>@Date 2022/2/23 20:01 </p>

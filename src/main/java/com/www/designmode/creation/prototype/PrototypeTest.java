@@ -3,7 +3,6 @@ package com.www.designmode.creation.prototype;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * <p>@Description 原型模式测试 </p>
