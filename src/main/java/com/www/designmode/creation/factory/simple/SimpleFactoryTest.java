@@ -8,8 +8,13 @@ import org.junit.Test;
  * <p>@Author www </p>
  * <p>@Date 2022/2/23 19:26 </p>
  */
-public class TestSimpleFactory {
-
+public class SimpleFactoryTest {
+	/**
+	 * <p>@Description 测试 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/2/23 19:50 </p>
+	 * @return void
+	 */
 	@Test
 	public void test() {
 		SimpleFactory factory = new SimpleFactory();

@@ -1,6 +1,4 @@
 package com.www.designmode.creation.singleton;
-
-
 /**
  * <p>@Description 饿汉式单例模式 </p>
  * <p>@Version 1.0 </p>
