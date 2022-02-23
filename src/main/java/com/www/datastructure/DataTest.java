@@ -1,12 +1,11 @@
 package com.www.datastructure;
 
-import java.util.Iterator;
-
-import org.junit.Test;
-
 import com.www.datastructure.intertfaces.MyList;
 import com.www.datastructure.lineartable.MyArrayList;
 import com.www.datastructure.lineartable.MyLinkedList;
+import org.junit.Test;
+
+import java.util.Iterator;
 /**
  *
  *

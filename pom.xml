@@ -15,11 +15,11 @@
 
 	<!-- 依赖配置 -->
 	<dependencies>
-		<!-- oracle数据库依赖 -->
+		<!--junit 依赖-->
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
 		</dependency>
 		<!--commons 依赖-->
 		<dependency>
