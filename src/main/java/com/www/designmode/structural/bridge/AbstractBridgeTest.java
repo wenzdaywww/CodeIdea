@@ -1,33 +1,37 @@
-/**
- * 桥接模式：
- * 桥接模式就是把事物和其具体实现分开，使他们可以各自独立的变化。桥接的用意是：将抽象化与实现化解耦，使得二者可以独立变化，像我们常用的JDBC桥DriverManager一样，
- * JDBC进行连接数据库的时候，在各个数据库之间进行切换，基本不需要动太多的代码，甚至丝毫不用动，原因就是JDBC提供统一接口，每个数据库提供各自的实现，用一个叫做数据库驱动的程序来桥接就行了。
- */
 package com.www.designmode.structural.bridge;
 
-import com.www.designmode.structural.bridge.interfaces.Sourceable;
+import com.www.designmode.structural.bridge.impl.Dell;
+import com.www.designmode.structural.bridge.impl.Lenovo;
+import org.junit.Test;
 
 /**
- * @author www
- *
+ * <p>@Description 桥接模式 </p>
+ * <p>@Version 1.0 </p>
+ * <p>@Author www </p>
+ * <p>@Date 2022/2/25 22:43 </p>
  */
 public class AbstractBridgeTest {
 
 	/**
-	 * @param args
+	 * <p>@Description 测试 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/2/25 22:43 </p>
+	 * @return void
 	 */
-	public static void main(String[] args) {
-		AbstractBridge bridge = new MyBridge();
-
-		/**调用第一个对象*/
-		Sourceable source1 = new SourceSub1();
-		bridge.setSource(source1);
-		bridge.method();
-
-		/**调用第二个对象*/
-		Sourceable source2 = new SourceSub2();
-		bridge.setSource(source2);
-		bridge.method();
+	@Test
+	public void test() {
+		//销售联想笔记本电脑
+		ComputerType computer1 = new LaptopComputer(new Lenovo());
+		System.out.println(computer1.sale());
+		//销售联想台式电脑
+		ComputerType computer2 = new DesktopComputer(new Lenovo());
+		System.out.println(computer2.sale());
+		//销售戴尔笔记本电脑
+		ComputerType computer3 = new LaptopComputer(new Dell());
+		System.out.println(computer3.sale());
+		//销售戴尔台式电脑
+		ComputerType computer4 = new DesktopComputer(new Dell());
+		System.out.println(computer4.sale());
 	}
 
 }
