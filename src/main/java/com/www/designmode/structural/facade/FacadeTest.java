@@ -1,21 +1,28 @@
-/**
- * 外观模式：
- * 外观模式是为了解决类与类之家的依赖关系的，像spring一样，可以将类和类之间的关系配置到配置文件中，而外观模式就是将他们的关系放在一个Facade类中，降低了类类之间的耦合度，该模式中没有涉及到接口。
- */
 package com.www.designmode.structural.facade;
 
+import org.junit.Test;
+
 /**
- * @author www
- *
+ * <p>@Description 外观模式测试 </p>
+ * <p>@Version 1.0 </p>
+ * <p>@Author www </p>
+ * <p>@Date 2022/2/25 22:29 </p>
  */
 public class FacadeTest {
 
 	/**
-	 * @param args
+	 * <p>@Description 测试 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/2/25 22:29 </p>
+	 * @return void
 	 */
-	public static void main(String[] args) {
+	@Test
+	public void test() {
+		//创建一台电脑
 		Computer computer = new Computer();
+		//开机
 		computer.startup();
+		//关机
 		computer.shutdown();
 	}
 
