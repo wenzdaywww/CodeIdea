@@ -1,4 +1,4 @@
-package com.www.datastructure;
+package com.www.datastructure.list;
 
 import com.www.datastructure.list.inf.MyList;
 import com.www.datastructure.list.MyArrayList;
@@ -12,7 +12,7 @@ import java.util.Iterator;
  * <p>@Author www </p>
  * <p>@Date 2022/3/1 22:58 </p>
  */
-public class DataTest {
+public class ListTest {
 	/**
 	 * <p>@Description 动态数组线性表测试 </p>
 	 * <p>@Author www </p>
