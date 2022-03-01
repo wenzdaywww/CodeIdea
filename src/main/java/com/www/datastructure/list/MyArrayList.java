@@ -1,14 +1,15 @@
-package com.www.datastructure.lineartable;
+package com.www.datastructure.list;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import com.www.datastructure.intertfaces.MyList;
+import com.www.datastructure.list.inf.MyList;
 
 /**
- * 动态数组线性表，位置从0开始
- * @author wenzday
- *
+ * <p>@Description 动态数组线性表，位置从0开始 </p>
+ * <p>@Version 1.0 </p>
+ * <p>@Author www </p>
+ * <p>@Date 2022/3/1 22:42 </p>
  */
 public class MyArrayList<T> implements MyList<T>{
 	/** 数组长度 */
@@ -17,18 +18,32 @@ public class MyArrayList<T> implements MyList<T>{
 	private T[] arr;
 	/** 数组初始长度*/
 	private int initSize;
-
+	/**
+	 * <p>@Description 构造方法 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:42 </p>
+	 */
 	public MyArrayList() {
 		this(10);
 	}
-
-	@SuppressWarnings("unchecked")
+	/**
+	 * <p>@Description 构造方法 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:42 </p>
+	 * @param initSize 容量
+	 */
 	public MyArrayList(int initSize){
 		length=0;
 		this.initSize=initSize;
 		arr=(T[])new Object[this.initSize];
 	}
-
+	/**
+	 * <p>@Description 末尾添加元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:43 </p>
+	 * @param entry 元素
+	 * @return boolean true添加成功，false添加失败
+	 */
 	@Override
 	public boolean add(T entry) {
 		boolean isSuccess=true;
@@ -40,8 +55,14 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return isSuccess;
 	}
-
-	@SuppressWarnings("unchecked")
+	/**
+	 * <p>@Description 指定位置添加元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:44 </p>
+	 * @param position 位置坐标
+	 * @param entry 元素
+	 * @return boolean true添加成功，false添加失败
+	 */
 	@Override
 	public boolean add(int position, T entry) {
 		boolean isSuccess=true;
@@ -67,17 +88,35 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return isSuccess;
 	}
-
+	/**
+	 * <p>@Description 添加到头部 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:45 </p>
+	 * @param entry 元素
+	 * @return boolean true添加成功，false添加失败
+	 */
 	@Override
 	public boolean addFirst(T entry) {
 		return add(0, entry);
 	}
-
+	/**
+	 * <p>@Description 添加到尾部 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:45 </p>
+	 * @param entry 元素
+	 * @return boolean true添加成功，false添加失败
+	 */
 	@Override
 	public boolean addLast(T entry) {
 		return add(entry);
 	}
-
+	/**
+	 * <p>@Description 删除指定位置元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:45 </p>
+	 * @param position 位置坐标
+	 * @return T 删除的元素
+	 */
 	@Override
 	public T remove(int position) {
 		T obj=null;
@@ -99,18 +138,32 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return obj;
 	}
-
+	/**
+	 * <p>@Description 删除头部第一个 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:45 </p>
+	 * @return T 删除的元素
+	 */
 	@Override
 	public T removeFisrt() {
 		return remove(0);
 	}
-
+	/**
+	 * <p>@Description 删除尾部最后一个 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:46 </p>
+	 * @return T 删除的元素
+	 */
 	@Override
 	public T removeLast() {
 		return remove(length-1);
 	}
-
-	@SuppressWarnings("unchecked")
+	/**
+	 * <p>@Description 清除所有元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:46 </p>
+	 * @return void
+	 */
 	@Override
 	public void clear() {
 		for (int i = 0; i < length; i++) {
@@ -119,7 +172,14 @@ public class MyArrayList<T> implements MyList<T>{
 		length=0;
 		arr=(T[])new Object[initSize];
 	}
-
+	/**
+	 * <p>@Description 替换指定位置元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:46 </p>
+	 * @param position 位置坐标
+	 * @param entry 替换的元素
+	 * @return boolean true替换成功，false替换失败
+	 */
 	@Override
 	public boolean replace(int position, T entry) {
 		boolean isSuccess=true;
@@ -131,7 +191,13 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return isSuccess;
 	}
-
+	/**
+	 * <p>@Description 获取指定位置元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:47 </p>
+	 * @param position 位置坐标
+	 * @return T 元素
+	 */
 	@Override
 	public T get(int position) {
 		T obj=null;
@@ -143,17 +209,33 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return obj;
 	}
-
+	/**
+	 * <p>@Description 获取第一个 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:47 </p>
+	 * @return T 元素
+	 */
 	@Override
 	public T getFisrt() {
 		return get(0);
 	}
-
+	/**
+	 * <p>@Description 获取最后一个 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:47 </p>
+	 * @return T 元素
+	 */
 	@Override
 	public T getLast() {
 		return get(length-1);
 	}
-
+	/**
+	 * <p>@Description 是否包含某元素 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:47 </p>
+	 * @param obj 某元素
+	 * @return boolean true包含，false不包含
+	 */
 	@Override
 	public boolean contains(Object obj) {
 		boolean isContains=false;
@@ -165,12 +247,22 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return isContains;
 	}
-
+	/**
+	 * <p>@Description 长度大小 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:47 </p>
+	 * @return int 长度大小
+	 */
 	@Override
 	public int size() {
 		return length;
 	}
-
+	/**
+	 * <p>@Description 是否为空 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:48 </p>
+	 * @return boolean true为空，false不为空
+	 */
 	@Override
 	public boolean isEmpty() {
 		boolean isEmpty=false;
@@ -179,12 +271,22 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		return isEmpty;
 	}
-
+	/**
+	 * <p>@Description 是否已满 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:48 </p>
+	 * @return boolean true已满
+	 */
 	@Override
 	public boolean isFull() {
 		return length==arr.length;
 	}
-
+	/**
+	 * <p>@Description 打印显示 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:48 </p>
+	 * @return void
+	 */
 	@Override
 	public void display() {
 		String str="";
@@ -194,33 +296,53 @@ public class MyArrayList<T> implements MyList<T>{
 		}
 		System.out.println(str.substring(0, str.length()-1));
 	}
-
+	/**
+	 * <p>@Description 获取迭代器 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:52 </p>
+	 * @return java.util.Iterator<T>
+	 */
 	@Override
 	public Iterator<T> iterator() {
 		return new ArrayIterator<T>();
 	}
 	/**
-	 * 内部迭代器
-	 * @author wenzday
-	 * @param <T>
+	 * <p>@Description 内部迭代器 </p>
+	 * <p>@Version 1.0 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/1 22:52 </p>
 	 */
-	@SuppressWarnings("hiding")
 	private class ArrayIterator<T> implements Iterator<T>{
 		/** 下一个索引 */
 		private int nextIndex;
 		/** 是否有下一个调用 */
 		private boolean wasNextCalled;
-
+		/**
+		 * <p>@Description 构造方法 </p>
+		 * <p>@Author www </p>
+		 * <p>@Date 2022/3/1 22:52 </p>
+		 * @return
+		 */
 		public ArrayIterator(){
 			nextIndex=0;
 			wasNextCalled=false;
 		}
+		/**
+		 * <p>@Description 是否有下一个 </p>
+		 * <p>@Author www </p>
+		 * <p>@Date 2022/3/1 22:52 </p>
+		 * @return boolean true有，false没有
+		 */
 		@Override
 		public boolean hasNext() {
 			return nextIndex<length;
 		}
-
-		@SuppressWarnings("unchecked")
+		/**
+		 * <p>@Description 获取下一个元素 </p>
+		 * <p>@Author www </p>
+		 * <p>@Date 2022/3/1 22:53 </p>
+		 * @return T 元素
+		 */
 		@Override
 		public T next() {
 			if (hasNext()) {
@@ -232,7 +354,12 @@ public class MyArrayList<T> implements MyList<T>{
 				throw new NoSuchElementException("Illegal call to next();iterator is after end of list.");
 			}
 		}
-
+		/**
+		 * <p>@Description 删除当前元素 </p>
+		 * <p>@Author www </p>
+		 * <p>@Date 2022/3/1 22:53 </p>
+		 * @return void
+		 */
 		@Override
 		public void remove() {
 			if (wasNextCalled) {
