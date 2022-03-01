@@ -27,8 +27,5 @@
 #### 访问者模式(Visitor)
 #### 中介者模式(Mediator)
 #### 解释器模式(Interpreter)
-
-## 2、连接池(Connection Pool)
-
-## 3、数据结构(Data Structure)
+## 2、数据结构(Data Structure)
 ### 3.1、线性表(Linear Table)
