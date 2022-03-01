@@ -1,30 +1,32 @@
-/**
- * 组合模式：
- * 组合模式有时又叫部分-整体模式在处理类似树形结构的问题时比较方便
- * 将多个对象组合在一起进行操作，常用于表示树形结构中，例如二叉树，数等。
- */
 package com.www.designmode.structural.composite;
 
+import org.junit.Test;
+
 /**
- * @author www
- *
+ * <p>@Description 组合模式测试 </p>
+ * <p>@Version 1.0 </p>
+ * <p>@Author www </p>
+ * <p>@Date 2022/2/25 23:23 </p>
  */
 public class CompositeTest {
 
 	/**
-	 * @param args
+	 * <p>@Description 测试 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/2/25 23:23 </p>
+	 * @return void
 	 */
-	public static void main(String[] args) {
-		Tree tree = new Tree("A");
-		TreeNode nodeb = new TreeNode("B");
-		TreeNode nodec = new TreeNode("C");
-		nodeb.add(nodec);
-		tree.root.add(nodeb);
-		System.out.println("C节点的父节点="+nodec.getParent().getName());
-		System.out.println("B节点的父节点="+nodeb.getParent().getName());
-		System.out.println("根节点的子节点数"+tree.root.getChildrens().size());
-		System.out.println("B节点的子节点数"+nodeb.getChildrens().size());
-		System.out.println("C节点的子节点数"+nodec.getChildrens().size());
+	@Test
+	public void test() {
+		Folder folder = new Folder("组合模式");
+		File note1 = new File("笔记1.txt","这是笔记1");
+		File note2 = new File("笔记2.txt","这是笔记1");
+		folder.add(note1);
+		folder.add(note2);
+		Folder folder1 = new Folder("未知模式");
+		File note3 = new File("笔记1.txt","这是笔记1");
+		folder1.add(note3);
+		folder.add(folder1);
+		folder.print();
 	}
-
 }

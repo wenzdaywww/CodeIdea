@@ -10,7 +10,7 @@ import org.junit.Test;
  * <p>@Author www </p>
  * <p>@Date 2022/2/25 22:43 </p>
  */
-public class AbstractBridgeTest {
+public class BridgeTest {
 
 	/**
 	 * <p>@Description 测试 </p>
