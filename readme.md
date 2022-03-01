@@ -28,4 +28,4 @@
 #### 中介者模式(Mediator)
 #### 解释器模式(Interpreter)
 ## 2、数据结构(Data Structure)
-### 1、线性表(Linear Table)
+### 2.1、线性表(Linear Table)
