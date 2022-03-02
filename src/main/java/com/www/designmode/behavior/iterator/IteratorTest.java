@@ -1,26 +1,27 @@
-/**
- * 迭代子模式:
- * 迭代器模式就是顺序访问聚集中的对象，一般来说，集合中非常常见，如果对集合类比较熟悉的话，理解本模式会十分轻松。
- * 这句话包含两层意思：一是需要遍历的对象，即聚集对象，二是迭代器对象，用于对聚集对象进行遍历访问。
- */
 package com.www.designmode.behavior.iterator;
 
-import com.www.designmode.behavior.iterator.interfaces.Collection;
-import com.www.designmode.behavior.iterator.interfaces.Iterator;
+import com.www.designmode.behavior.iterator.impl.MyList;
+import com.www.designmode.behavior.iterator.inf.Collection;
+import com.www.designmode.behavior.iterator.inf.Iterator;
+import org.junit.Test;
 
 /**
- * @author www
- *
+ * <p>@Description 迭代器模式 </p>
+ * <p>@Version 1.0 </p>
+ * <p>@Author www </p>
+ * <p>@Date 2022/3/2 21:29 </p>
  */
 public class IteratorTest {
-
 	/**
-	 * @param args
+	 * <p>@Description 测试 </p>
+	 * <p>@Author www </p>
+	 * <p>@Date 2022/3/2 21:29 </p>
+	 * @return void
 	 */
-	public static void main(String[] args) {
-		Collection collection = new MyCollection();
+	@Test
+	public void test() {
+		Collection collection = new MyList();
 		Iterator it = collection.iterator();
-
 		while(it.hasNext()){
 			System.out.println(it.next());
 		}
