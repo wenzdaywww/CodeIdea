@@ -6,7 +6,7 @@ package com.www.designmode.creation.builder.model;
  * <p>@Author www </p>
  * <p>@Date 2022/2/23 20:23 </p>
  */
-public class Person {
+public abstract class Person {
     /**  头部 **/
     private String head;
     /**  身体 **/

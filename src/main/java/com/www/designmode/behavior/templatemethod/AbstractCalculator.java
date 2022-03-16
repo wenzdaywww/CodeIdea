@@ -15,7 +15,7 @@ public abstract class AbstractCalculator {
 	 * @param opt 运算符
 	 * @return int 计算后的值
 	 */
-	public int calculate(String exp,String opt){
+	public final int calculate(String exp,String opt){
 		int array[] = split(exp,opt);
 		return calculate(array[0],array[1]);
 	}
