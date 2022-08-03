@@ -1,8 +1,5 @@
 package com.www.thread.communication;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * <p>@Description 线程间通信: 使用 volatile 关键字 </p>
  * <p>@Version 1.0 </p>
